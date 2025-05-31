@@ -1,5 +1,8 @@
 # BotCorn
 
+🎬 **BotCorn** is a smart movie recommendation system that uses semantic search and genre filtering to help users discover movies based on natural language descriptions.  
+It leverages NLP, vector similarity, and TMDB metadata to offer accurate, visually engaging suggestions through an interactive Gradio dashboard.
+
 <p align="center">
   <img src="https://github.com/Abdallah-Ahmed0/BotCorn/blob/main/image.png" width="600"/>
 </p>
