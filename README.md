@@ -124,11 +124,6 @@ To provide an intuitive and user-friendly interface for exploring movie recommen
 
 ---
 
-
-Your README is very thorough! Great job documenting each step. To make it fully complete, here are the **missing parts** you can add — especially under **Installation**, **Environment Setup**, and optional extras like **Project Structure** and **License** if applicable.
-
----
-
 ### 📦 Installation
 
 Make sure Python 3.8+ is installed on your machine.
