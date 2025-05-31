@@ -83,3 +83,87 @@ The project implements a semantic book recommendation system using advanced NLP 
 
 ---
 
+
+## Final Step: Interactive Movie Recommendation Dashboard with Gradio
+
+To provide an intuitive and user-friendly interface for exploring movie recommendations, i built an interactive dashboard using **Gradio**.
+
+### What it does:
+
+* **User Input:** Allows users to enter a natural language description of a movie plot or theme.
+* **Genre Filter:** Provides a dropdown menu for users to filter recommendations by movie genre, including an "All" option.
+* **Semantic Search:** Uses a semantic similarity search over movie plot embeddings to find relevant movies matching the user query.
+* **Dynamic Filtering:** Applies genre-based filtering on the recommended movies if a specific genre is selected.
+* **Results Display:** Presents recommended movies as a visually appealing gallery of posters with centered, larger movie titles and truncated descriptions.
+
+### Key Features:
+
+* **Powered by LangChain & HuggingFace Embeddings:** For robust text understanding and similarity search.
+* **Real-Time Recommendations:** Updates results instantly based on user input and genre selection.
+* **Visual Output:** Displays movie posters alongside formatted captions for easy browsing.
+* **Responsive UI:** Built with Gradio’s Blocks interface and customizable themes.
+
+### How to run:
+
+1. Ensure dependencies are installed (`pandas`, `gradio`, `langchain`, `huggingface` libraries).
+2. Prepare your dataset (`movies_with_posters.csv`) and text embeddings.
+3. Run the dashboard script:
+
+   ```bash
+   python dashboard.py
+   ```
+4. Open the local URL provided by Gradio in your browser.
+5. Enter a movie description, select a genre, and get personalized movie recommendations instantly.
+
+---
+
+
+Your README is very thorough! Great job documenting each step. To make it fully complete, here are the **missing parts** you can add — especially under **Installation**, **Environment Setup**, and optional extras like **Project Structure** and **License** if applicable.
+
+---
+
+### 📦 Installation
+
+Make sure Python 3.8+ is installed on your machine.
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/botcorn.git
+   cd botcorn
+   ```
+
+2.**Install the required packages:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+### 📁 Project Structure (Optional but Helpful)
+
+```bash
+botcorn/
+│
+├── data/
+│   ├── movies_with_posters.csv
+│   └── tagged_overview.txt
+│__ notebooks/
+|   |__ data_exploration.ipynb
+|   |__ posters_scrapping.ipynb
+|   |__ vector_search.ipynb
+|
+├── dashboard.py
+├── .env
+├── README.md
+└── requirements.txt
+```
+
+---
+```bash
+git clone https://github.com/Abdallah-Ahmed0/MyBookLlm
+cd my_project
+pip install -r requirements.txt
+```
+---
