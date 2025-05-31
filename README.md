@@ -143,7 +143,7 @@ Make sure Python 3.8+ is installed on your machine.
 
 ---
 
-### 📁 Project Structure (Optional but Helpful)
+### 📁 Project Structure
 
 ```bash
 botcorn/
