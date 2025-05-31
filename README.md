@@ -11,9 +11,6 @@ The dataset used in this project is the **TMDB 9000+ Movie Genres Dataset**, whi
 * `id`: Unique movie identifier
 * `title`: Title of the movie
 * `overview`: Brief description
-* `release_date`: Date the movie was released
-* `popularity`: Popularity score
-* `vote_average`: Average user rating
 * `genre_ids`: A list of numeric genre identifiers for each movie
 
 This dataset is a great source for understanding movie trends, popularity metrics, and genre classification across thousands of films from The Movie Database (TMDB).
@@ -23,25 +20,23 @@ This dataset is a great source for understanding movie trends, popularity metric
 ##  Data Preparation
 
 The dataset underwent several data cleaning and preparation steps, including handling missing values, standardizing formats, and correcting data types.
+### Cleaning & preparation
 
-###  Final Step – Mapping Genre IDs to Genre Names
+### Mapping Genre IDs to Genre Names
 
-The original dataset represents genres as lists of numeric IDs (`genre_ids`), which are not human-readable. To make the data more interpretable, we performed a mapping from these IDs to their corresponding genre names using a separate `genres` table.
+The original dataset represents genres as lists of numeric IDs (`genre_ids`), which are not human-readable. To make the data more interpretable, I performed a mapping from these IDs to their corresponding genre names using a separate `genres` table.
 
 However, the `genre_ids` column contained **stringified lists** (e.g., `"[18, 35]"`) instead of actual Python lists (`[18, 35]`). To resolve this:
 
-1. We used `ast.literal_eval()` to safely convert these string representations into actual lists.
-2. Then, we created a mapping dictionary from genre ID to genre name.
-3. Finally, we applied a function to each row to replace genre IDs with readable genre names.
+1. I used `ast.literal_eval()` to safely convert these string representations into actual lists.
+2. Then, created a mapping dictionary from genre ID to genre name.
+3. Finally, applied a function to each row to replace genre IDs with readable genre names.
 
 
 **Result**: The dataset now includes a `genre_names` column with clear, descriptive genre labels for each movie.
 
 ---
 
-Perfect — here’s a clean **README section** (without code) describing the step you just completed:
-
----
 
 ## 🖼️ Adding Poster URLs via TMDb API
 
@@ -64,4 +59,27 @@ A new column `poster_url` was added to the dataset, containing direct links to h
 
 ---
 
+## 🔍 Semantic Search Implementation
+
+The project implements a semantic book recommendation system using advanced NLP techniques:
+
+### Core Components
+- **Vector Database**: Uses LangChain's Chroma for efficient similarity search
+- **Embedding Model**: Implements Sentence-BERT's `all-MiniLM-L6-v2` model from Hugging Face
+  - A lightweight and efficient sentence transformer model
+  - Optimized for generating text embeddings
+  - 384-dimensional dense vector representations
+  - Excellent balance of speed and accuracy
+  - Trained on over 1 billion sentence pairs
+- **Search Algorithm**: Semantic similarity matching with customizable results
+
+### Features
+- Natural language query processing
+- Contextual understanding of book descriptions
+- Customizable number of recommendations
+- Returns complete book metadata
+- Fast and efficient similarity matching
+
+
+---
 
