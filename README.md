@@ -39,3 +39,29 @@ However, the `genre_ids` column contained **stringified lists** (e.g., `"[18, 35
 
 ---
 
+Perfect — here’s a clean **README section** (without code) describing the step you just completed:
+
+---
+
+## 🖼️ Adding Poster URLs via TMDb API
+
+After the data cleaning step, I enriched the dataset by retrieving poster images for each movie using the [TMDb API](https://www.themoviedb.org/documentation/api).
+
+### What has done
+
+* Queried TMDb's search endpoint using each movie's title.
+* Extracted the poster path from the top search result.
+* Constructed full image URLs and added them as a new column in the dataset.
+
+### 🔐 API Key
+
+I securely loaded the TMDb API key from a `.env` file using `python-dotenv`.
+
+
+### Output
+
+A new column `poster_url` was added to the dataset, containing direct links to high-quality poster images for most movies. This enables visual enhancements in dashboards, reports, or apps.
+
+---
+
+
