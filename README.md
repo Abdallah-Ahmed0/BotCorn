@@ -1,5 +1,9 @@
 # BotCorn
 
+<p align="center">
+  <img src="https://github.com/Abdallah-Ahmed0/BotCorn/blob/main/image.png" width="600"/>
+</p>
+
 
 
 
